@@ -8,5 +8,60 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="layout.css" />
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <a href="">Portfolio</a>
+      <a href="">Menneisyys</a>
+      <a href="">Nykyisyys</a>
+      <a href="">Tulevaisuus</a>
+      <a href="">Yhteystiedot</a>
+    </nav>
+    <main>
+      <section class="portfolio">
+        <h1></h1>
+        <h2></h2>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
+
+      <section class="menneisyys">
+        <div class="card-one"></div>
+        <div class="card-two"></div>
+        <div class="card-three"></div>
+      </section>
+      <section class="nykyisyys">
+        <h3></h3>
+        <p></p>
+        <figure></figure>
+      </section>
+      <section class="tulevaisuus">
+        <h3></h3>
+        <figure></figure>
+        <p></p>
+      </section>
+      <section class="contact">
+        <form action="submit-feedback">
+          <label for="name">Nimi: </label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Sähköposti</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="feedback">Palaute</label>
+          <textarea name="feedback" id="feedback" rows="10"></textarea>
+
+          <input type="submit" value="Lähetä" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>2023 <span class="copyright"></span> Mika Luukkonen</p>
+    </footer>
+  </body>
 </html>
