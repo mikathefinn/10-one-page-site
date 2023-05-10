@@ -4,7 +4,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-color: gray;
+  background-color: #333333;
 }
 
 nav {
@@ -17,4 +17,58 @@ nav {
 nav > a {
   text-decoration: none;
   color: white;
+}
+
+.portfolio {
+  color: #bb6a37;
+}
+
+.examples > li > a {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+h4 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.menneisyys {
+  background-color: #f5f5f5;
+  margin: 2rem;
+  display: flex;
+}
+.card {
+  flex: 1;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.cardimg {
+  max-width: 100%;
+}
+.nykyisyys {
+}
+
+.tulevaisuus {
+}
+.contact {
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-block-end: 1rem;
+}
+
+footer {
 }
