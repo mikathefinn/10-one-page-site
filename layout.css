@@ -5,27 +5,54 @@ html {
 body {
   font-size: 1.6rem;
   background-color: #333333;
+  padding: 2rem;
 }
 
 nav {
+  width: 100%;
   background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding: 2rem;
+  margin: -2rem -2rem -0.1rem -2rem;
+  z-index: 10;
 }
 nav > a {
+  padding-block-end: 1rem;
   text-decoration: none;
   color: white;
   margin-block-end: 0.5rem;
 }
 .wrapportfolio {
   background-image: url(https://source.unsplash.com/1600x900/?city,night);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-clip: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 .portfolio {
   color: #bb6a37;
+  margin: 2rem;
+  background-color: #1a1919bc;
+  width: 90%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.examples {
+  padding: 1rem;
+  margin-block-end: 2rem;
 }
 
 .examples > li > a {
@@ -35,12 +62,17 @@ nav > a {
 }
 h1 {
   font-size: 3.2rem;
+  padding: 1rem;
+  margin-block-end: 2rem;
 }
 h2 {
+  padding: 1rem;
   font-size: 2.8rem;
 }
 h3 {
   font-size: 2.4rem;
+  color: #bb6a37;
+  margin-block-end: 2rem;
 }
 h4 {
   font-size: 2rem;
@@ -49,14 +81,15 @@ h4 {
 .wrap {
   background-color: #f5f5f5;
 }
-.menneisyys {
-  background-color: #f5f5f5;
-  margin: 2rem;
-  display: flex;
-  flex-direction: column;
-}
+
 .h2menneisyys {
   padding: 1rem 0 2rem 1rem;
+}
+.menneisyys {
+  background-color: #f5f5f5;
+
+  display: flex;
+  flex-direction: column;
 }
 .card {
   flex: 1;
@@ -68,9 +101,21 @@ h4 {
 .cardimg {
   max-width: 100%;
 }
+hr {
+  border: none;
+  border-top: 2px solid rgb(59, 197, 243);
+  margin: 3rem 0;
+}
 .nykyisyys {
 }
+.images {
+  max-width: 100%;
+  margin-block-end: 1rem;
+}
 
+.paragraph {
+  margin-block-end: 2rem;
+}
 .tulevaisuus {
 }
 .contact {
@@ -87,5 +132,18 @@ label {
 footer {
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 426px) {
+  nav {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    z-index: 10;
+  }
+  body {
+  }
 }
