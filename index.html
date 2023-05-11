@@ -38,7 +38,7 @@
       <div class="wrap">
         <h2 class="h2menneisyys">Menneisyys</h2>
         <section class="menneisyys">
-          <div class="card">
+          <div class="card1">
             <figure>
               <img
                 class="cardimg"
@@ -58,7 +58,7 @@
               minus dolor. Iusto.
             </p>
           </div>
-          <div class="card">
+          <div class="card2">
             <figure>
               <img
                 class="cardimg"
@@ -78,7 +78,7 @@
               nemo ipsa provident architecto!
             </p>
           </div>
-          <div class="card">
+          <div class="card3">
             <figure>
               <img
                 class="cardimg"
@@ -106,7 +106,7 @@
         <h3>Nykyisyys</h3>
         <figure>
           <img
-            class="images"
+            class="presentimage"
             src="https://source.unsplash.com/1200x675/?party,people"
             alt=""
           />
@@ -134,7 +134,7 @@
         <h3>Tulevaisuus</h3>
         <figure>
           <img
-            class="images"
+            class="futureimage"
             src="https://source.unsplash.com/1200x675/?party,people"
             alt=""
           />
@@ -160,20 +160,26 @@
       <section class="contact">
         <hr />
         <form class="form" action="submit-feedback">
-          <label for="name">Nimi: </label>
-          <input type="text" id="name" name="name" required />
+          <div class="formwrapper">
+            <label for="name">Nimi: </label>
+            <input type="text" id="name" name="name" required />
+          </div>
 
-          <label for="email">Sähköposti</label>
-          <input type="email" id="email" name="email" required />
+          <div class="formwrapper">
+            <label for="email">Sähköposti</label>
+            <input type="email" id="email" name="email" required />
+          </div>
 
-          <label for="feedback">Palaute</label>
-          <textarea name="feedback" id="feedback" rows="1"></textarea>
-
+          <div class="formwrapper">
+            <label for="feedback">Palaute</label>
+            <textarea name="feedback" id="feedback" rows="1"></textarea>
+          </div>
           <input type="submit" value="Lähetä" />
         </form>
       </section>
     </main>
     <footer>
+      <hr class="lasthr" />
       <p>2023 <span class="copyright"></span> Mika Luukkonen</p>
     </footer>
   </body>
