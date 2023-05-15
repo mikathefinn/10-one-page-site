@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   background-color: #333333;
   padding: 2rem;
 }
@@ -76,6 +76,7 @@ h2 {
 h3 {
   font-size: 2.4rem;
   color: #bb6a37;
+
   margin-block-end: 2rem;
 }
 h4 {
@@ -83,14 +84,14 @@ h4 {
   font-weight: bold;
 }
 .wrap {
-  background-color: #f5f5f5;
+  background-color: white;
 }
 
 .h2menneisyys {
   padding: 1rem 0 2rem 1rem;
 }
 .menneisyys {
-  background-color: #f5f5f5;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
@@ -106,14 +107,9 @@ h4 {
 .cardimg {
   max-width: 100%;
 }
-hr {
-  border: none;
-  border-top: 2px solid rgb(59, 197, 243);
-  margin: 3rem 0;
-}
-.nykyisyys {
-}
-.images {
+
+.presentimage,
+.futureimage {
   max-width: 100%;
   margin-block-end: 1rem;
 }
@@ -121,9 +117,14 @@ hr {
 .paragraph {
   margin-block-end: 2rem;
 }
-.tulevaisuus {
+
+.line {
+  background-color: rgb(59, 197, 243);
+  height: 2px;
+  margin-block-start: 2rem;
 }
 .contact {
+  margin-block-start: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,6 +167,7 @@ input[type="submit"] {
 }
 
 footer {
+  color: rgba(236, 234, 234, 0.824);
 }
 .lasthr {
   border: none;
@@ -180,11 +182,17 @@ footer {
     background-color: black;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-
     z-index: 10;
   }
+  nav a:first-child {
+    margin-right: auto;
+  }
+  nav a:last-child {
+    margin-right: 3rem;
+  }
+
   main {
     padding-block-start: 7rem;
   }
@@ -192,6 +200,7 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 1rem;
     margin: 1rem;
   }
   .card1,
@@ -204,15 +213,31 @@ footer {
   }
 
   .presentimage {
-    width: 25rem;
+    width: 30rem;
     height: auto;
     float: left;
     margin: 0 1.5rem 1rem 0;
   }
   .futureimage {
-    width: 25rem;
+    width: 30rem;
     height: auto;
     float: right;
     margin: 0 0 1rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .card1,
+  .card2,
+  .card3 {
+    flex: 1;
+  }
+  .floatimage {
+    margin-block-end: 3rem;
+  }
+  .line {
+    background-color: rgb(59, 197, 243);
+    height: 2px;
+    margin: 6rem 3rem 3rem 3rem;
   }
 }
